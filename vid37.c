@@ -41,7 +41,6 @@ void ejercicio(){
 
 	printf("\n Cuantos numeros a sumar: ");
 	scanf("%i",&n);
-
 	cont = 1;
 	while(cont<=n)
 	{
@@ -56,11 +55,31 @@ void ejercicio(){
 		}
 		cont++;
 	}
-
 	suma = sumaPares + sumaImpares;
 	printf("\nLa suma es: %i",suma);
 }
 
 void problema(){
+/*	Suma de pares desde n hasta m */
 
+	int n, m, suma = 0;
+
+	printf("\nIngresa el primer numero: ");
+	scanf("%i",&n);
+	printf("\nIngresa el segundo numero: ");
+	scanf("%i",&m);
+
+	while(n<=m)
+	{
+		if(n%2==0)
+		{
+			suma = suma + n;
+		}
+		else
+		{
+			printf("\nNumeros impares: %i",n);
+		}
+		n++;
+	}
+	printf("\n La suma es: %i",suma);
 }
